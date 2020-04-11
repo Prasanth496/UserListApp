@@ -19,5 +19,14 @@ class UserDataManagerTest {
         val user = User("Pavan",mobileNumber = "9543216423")
         userDatamanager.add(user)
     }
-    
+
+    @Test
+    fun ShouldBeAbleToDeleteUser() {
+        val userDatamanager = UserDataManager()
+        val user = User("Pavan",mobileNumber = "9543216423")
+        userDatamanager.delete(user)
+    }
+
+
+
 }
