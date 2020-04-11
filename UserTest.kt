@@ -28,4 +28,12 @@ class UserTest {
         val userTwo = User(name = "Pavan",mobileNumber = "9432567834")
         Assert.assertTrue(userOne.equals(userTwo))
     }
+
+    @Test
+    //function for value are not equal check
+    fun givenUserOneAndUserTwoWithDifferentDetails_Whenequals_ShouldNotBeEqual() {
+        val userOne = User(name = "Pavan",mobileNumber = "9432567834")
+        val userTwo = User(name = "Ravi",mobileNumber = "9756523478")
+        Assert.assertFalse(userOne.equals(userTwo))
+    }
 }
