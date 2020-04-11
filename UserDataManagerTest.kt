@@ -7,6 +7,7 @@ import org.junit.Test
 
 class UserDataManagerTest {
     @Test
+    // function test for create user
     fun ShouldBeableToCreateOneUser() {
         val userDatamanager = UserDataManager()
         val user = User("Pavan",mobileNumber = "9543216423")
@@ -14,6 +15,7 @@ class UserDataManagerTest {
     }
 
     @Test
+    // function test for add user
     fun ShouldBeableToAddOneUser() {
         val userDatamanager = UserDataManager()
         val user = User("Pavan",mobileNumber = "9543216423")
@@ -21,12 +23,18 @@ class UserDataManagerTest {
     }
 
     @Test
+    // function test for delete user
     fun ShouldBeAbleToDeleteUser() {
         val userDatamanager = UserDataManager()
         val user = User("Pavan",mobileNumber = "9543216423")
         userDatamanager.delete(user)
     }
 
-
-
+    @Test
+    // function test for display user
+    fun ShouldBeAbleToDisplayUser() {
+        val userDatamanager = UserDataManager()
+        val user = User("Pavan",mobileNumber = "9543216423")
+        userDatamanager.display(user)
+    }
 }
